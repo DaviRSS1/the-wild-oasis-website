@@ -1,36 +1,190 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏕️ The Wild Oasis Website
 
-## Getting Started
+**The Wild Oasis Website** is a full-stack application built with **Next.js App Router**, developed for **study purposes** while following an advanced Next.js course and applying modern full-stack architecture concepts.
 
-First, run the development server:
+This application represents the **customer-facing platform** of The Wild Oasis, where guests can browse luxury cabins, check availability, create reservations, and manage their bookings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It integrates seamlessly with the admin dashboard (separate project) that manages cabins, bookings, and guests.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🌐 Live Demo  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👉 https://the-wild-oasis-website-ruddy-beta.vercel.app/
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Admin Panel Repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project connects to the administrator dashboard:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🏨 **The Wild Oasis – Admin Panel**  
+👉 https://github.com/DaviRSS1/the-wild-oasis
 
-## Deploy on Vercel
+The admin panel is responsible for managing:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Cabins (CRUD)
+- Guests (CRUD)
+- Bookings management
+- Dashboard analytics
+- Authentication & authorization
+- Supabase database control
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Together, both applications simulate a real-world SaaS architecture with separated client and admin environments.
+
+---
+
+## 🚀 Features
+
+### 🏡 Cabins & Navigation
+
+- Browse all available cabins
+- Dynamic cabin detail pages
+- Responsive image rendering
+- Optimized images using `next/image`
+- Dynamic metadata per cabin
+- Nested layouts with App Router
+
+### 📅 Reservations System
+
+- Interactive date range picker
+- Availability validation
+- Create new reservation
+- Update reservation
+- Delete reservation
+- Optimistic UI updates
+- Streaming UI with Suspense
+
+### 👤 Authentication
+
+- NextAuth integration
+- Google authentication (if configured)
+- Protected routes using Middleware
+- Automatic guest creation on first sign-in
+- Session handling on the server
+- Custom sign-in and sign-out flows
+
+### ⚡ Performance & Rendering
+
+- Server Components by default
+- Client Components when interactivity is required
+- Streaming with `loading.js`
+- Error boundaries (`error.js`)
+- Static Site Generation (SSG)
+- Dynamic rendering
+- Incremental Static Regeneration (ISR)
+- Partial Pre-Rendering (PPR)
+- Advanced caching strategies
+- Manual cache revalidation
+
+### 🎨 UI & UX
+
+- Tailwind CSS styling
+- Responsive layout
+- Font optimization
+- Image optimization
+- Clean and scalable folder structure
+- Modern server-first architecture
+
+---
+
+## 🧠 Concepts Practiced
+
+This project was built to deeply reinforce modern Next.js and full-stack React patterns:
+
+### ⚙️ Next.js App Router
+
+- Nested layouts
+- Route groups
+- Dynamic segments
+- `generateStaticParams`
+- Dynamic metadata generation
+- Route Handlers (API endpoints)
+
+### 🧩 React Server Components (RSC)
+
+- Server vs Client Components
+- Hydration fundamentals
+- Streaming Server Components
+- Passing data between Server and Client
+- Blurring the server/client boundary
+
+### 📡 Data Fetching & Caching
+
+- Server-side data fetching
+- React Suspense
+- Streaming UI
+- Static vs Dynamic rendering
+- Caching strategies
+- Manual revalidation
+- Partial Pre-Rendering
+
+### 🔐 Authentication & Security
+
+- NextAuth
+- Middleware route protection
+- Server session handling
+- Database user synchronization
+
+### 🧠 Advanced React Patterns
+
+- Server Actions
+- `useFormStatus`
+- `useTransition`
+- `useOptimistic`
+- Context API for state management
+- URL-based state sharing
+- Error boundaries
+
+---
+
+## 🛠️ Built With
+
+- Next.js (App Router)
+- React
+- NextAuth
+- Supabase (Database)
+- Tailwind CSS
+- date-fns
+- Vercel (Deployment)
+
+---
+
+## 🗄️ Backend & Database
+
+The backend is powered by **Supabase**, shared with the Admin Panel project:
+
+- Relational database
+- Cabin & booking relationships
+- Guest management
+- Row Level Security (RLS)
+- Authentication
+- Secure data policies
+
+---
+
+## 🎯 Purpose of the Project
+
+This application was developed for **advanced full-stack practice**, focusing on:
+
+- Server-first architecture
+- Modern rendering strategies
+- Authentication flows
+- Data consistency between apps
+- Real-world SaaS simulation
+- Performance optimization
+- Clean and scalable project structure
+
+Together with the Admin Panel, this project simulates a production-style booking platform with separated client and management environments.
+
+---
+
+## 👤 Author
+
+Developed by **Davi Reghim**
+
+🔗 LinkedIn:  
+https://www.linkedin.com/in/davi-reghim-13b995272/
+
+💻 GitHub:  
+https://github.com/DaviRSS1/
